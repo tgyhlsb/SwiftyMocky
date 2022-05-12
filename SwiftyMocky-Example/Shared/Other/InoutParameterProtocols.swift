@@ -12,4 +12,5 @@ import Foundation
 protocol InoutProtocol: class {
     func passThisAsInOut(value: inout URLRequest)
     func returnAndInOut(value: inout Int) -> String
+    func genericInOutClosure<T>(value: inout T, closure: (inout T) -> Void)
 }
